@@ -72,4 +72,10 @@
         <path d="M238.127 46.4617L238.946 44.7275L236.196 38.8017H236.866L239.266 44.0573L241.702 38.8017H242.356L238.813 46.4617H238.127Z" fill="#E3E5E9"/>
     </symbol>
 
+    <symbol id="close-popup" width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="23.2273" width="32.1411" height="3.21411" transform="rotate(-45 0 23.2273)" fill="#56585B"/>
+        <rect x="2.27246" y="0.5" width="32.1411" height="3.21411" transform="rotate(45 2.27246 0.5)" fill="#56585B"/>
+    </symbol>
+
+
 </svg>

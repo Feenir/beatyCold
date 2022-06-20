@@ -22,6 +22,9 @@
     background-color: white
     min-width: 185px
     min-height: 185px
+    cursor: pointer
+    &:hover .hero__button-text
+      background-color: #C1B49B
 
   &__button-text
     position: relative
@@ -33,12 +36,17 @@
     background-color: #AA9C85
     color: white
     border-radius: 50%
+    transition: background .5s
 
   &__button-figure
     position: absolute
     bottom: -64px
-    left: -910px
+    left: -70px
 
   &__button-path
     fill: white
+
+  &__button-figure
+    pointer-events: none
+
 
