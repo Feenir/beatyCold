@@ -3,23 +3,41 @@
   &__wrapper
     display: flex
     flex-wrap: wrap
-    padding: 70px 0 84px 0
+    padding: 44px 0 44px 0
     justify-content: space-between
+    @media (max-width: 891px)
+      flex-direction: column
 
   &__item
     display: flex
     flex-direction: column
     justify-content: space-between
     width: calc(33.33% - 20px)
+    @media (max-width: 891px)
+      width: 100%
     &--first
       margin-right: 40px
+      @media (max-width: 891px)
+        margin-bottom: 22px
+        order: 1
     &--second
       width: calc(25% - 20px)
+      @media (max-width: 891px)
+        width: 100%
+        order: 3
+        margin-bottom: 64px
+
     &--third
       width: calc(24% - 20px)
+      @media (max-width: 891px)
+        width: 100%
+        order: 2
+        margin-bottom: 50px
 
   &__logo
     margin-bottom: 130px
+    @media (max-width: 891px)
+      margin-bottom: 0
 
   &__list
     display: flex
@@ -36,6 +54,11 @@
   &__pol
     font-size: 14px
     color: #AEAEAE
+    @media (max-width: 891px)
+      display: none
+    &--mob
+      @media (max-width: 891px)
+        display: block
 
   &__keeping-items
     text-transform: uppercase
@@ -45,10 +68,19 @@
   &__keeping-link
     color: #E3E5E9
     letter-spacing: 0.06em
+    @media (max-width: 991px)
+      font-size: 15px
 
   &__copyright
     color: #AEAEAE
     font-size: 14px
+    @media (max-width: 891px)
+      display: none
+    &--mob
+      @media (max-width: 891px)
+        display: block
+        margin-bottom: 15px
+
 
   &__contacts
     display: flex
@@ -59,14 +91,26 @@
     font-size: 22px
     font-weight: 600
     margin-bottom: 12px
+    @media (max-width: 991px)
+      font-size: 15px
 
   &__mail
     margin-bottom: 12px
     color: rgba(251, 252, 255, 0.7)
     font-size: 14px
     text-decoration: underline
+    @media (max-width: 991px)
+      font-size: 12px
 
   &__location
     font-size: 14px
     color: rgba(251, 252, 255, 0.7)
+    @media (max-width: 991px)
+      font-size: 12px
+
+  &__bottom-mob
+    display: none
+    @media (max-width: 891px)
+      display: block
+      order: 4
 

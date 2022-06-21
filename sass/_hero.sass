@@ -1,4 +1,6 @@
 .hero
+  @media (max-width: 768px)
+    text-align: center
   &__title
     text-transform: uppercase
     letter-spacing: 0.02em
@@ -9,12 +11,21 @@
   &__wrapper
     display: flex
     justify-content: space-between
+    @media (max-width: 768px)
+      flex-direction: column
+      align-items: center
 
   &__button-wrapper
     z-index: 100
 
   &__text
     font-size: 20px
+    max-width: 660px
+    @media (max-width: 991px)
+      font-size: 15px
+      max-width: none
+    @media (max-width: 768px)
+      margin-bottom: 20px
 
   &__button
     display: flex
@@ -26,7 +37,9 @@
     min-width: 185px
     min-height: 185px
     cursor: pointer
-
+    margin-right: 210px
+    @media (max-width: 1400px)
+      margin-right: 0
     &:hover .hero__button-text
       background-color: #C1B49B
 

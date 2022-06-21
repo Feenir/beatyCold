@@ -1,8 +1,15 @@
 .photo
   &__title-wrapper
     margin-bottom: 67px
+
+    @media (max-width: 991px)
+      margin-bottom: 35px
+    @media (max-width: 768px)
+      margin-bottom: 14px
   &__title
     text-transform: uppercase
+    @media (max-width: 768px)
+      text-align: center
   &__title-letter
     color: #9DA0A6
 
@@ -10,7 +17,16 @@
     display: flex
     flex-wrap: wrap
     gap: 10px
+    padding-bottom: 10px
 
 
   &__items
     width: calc(25% - 7.5px)
+    @media (max-width: 1400px)
+      width: calc(33.33% - 6.7px)
+    @media (max-width: 768px)
+      width: calc(50% - 5px)
+
+  &__img
+    height: 100%
+    object-fit: cover

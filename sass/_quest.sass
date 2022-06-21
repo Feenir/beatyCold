@@ -5,12 +5,29 @@
     border-top-right-radius: 48px
     padding: 10px
     margin-bottom: $mb
+    @media (max-width: 991px)
+      margin-bottom: $mb-m
 
   &__wrapper
     padding: 79px 110px 65px 99px
     background-color: #56585B
     border-bottom-left-radius: 48px
     border-top-right-radius: 48px
+    @media (max-width: 1400px)
+      padding: 60px
+    @media (max-width: 768px)
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 52px 25px 63px 25px
+    @media (max-width: 400px)
+      padding: 15px
+
+
+  &__list-wrapper
+    @media (max-width: 768px)
+      display: flex
+      justify-content: center
 
   &__title
     font-size: 40px
@@ -18,25 +35,45 @@
     line-height: 1.4
     text-align: left
     margin-bottom: 31px
+    @media (max-width: 1400px)
+      font-size: 32px
+    @media (max-width: 991px)
+      font-size: 21px
+    @media (max-width: 768px)
+      text-align: center
+      margin-bottom: 20px
 
   &__items-wrapper
     display: flex
     justify-content: space-between
+    @media (max-width: 1400px)
+      gap: 50px
+    @media (max-width: 768px)
+      flex-direction: column
 
   &__item
     display: flex
     flex-direction: column
     width: calc(50% - 60px)
+    @media (max-width: 768px)
+      width: 100%
+
     &--contact
       flex: 1
       max-width: 474px
     &--form
       align-items: flex-end
+      @media (max-width: 768px)
+        align-items: flex-start
 
   &__item-text
     font-size: 20px
     color: #F8F8F8
     margin-bottom: 44px
+    @media (max-width: 991px)
+      font-size: 15px
+    @media (max-width: 768px)
+      text-align: center
 
   &__list-item
     &:not(:last-child)
@@ -47,6 +84,8 @@
     align-items: center
     color: #F8F8F8
     font-size: 20px
+    @media (max-width: 991px)
+      font-size: 15px
     &:before
       content: ''
       width: 20px
@@ -68,6 +107,8 @@
     display: flex
     flex-direction: column
     max-width: 300px
+    @media (max-width: 768px)
+      max-width: none
 
   &__label
     margin-bottom: 32px
@@ -79,11 +120,17 @@
     &::placeholder
       color: rgba(196, 196, 196, 0.8)
       font-size: 14px
+      @media (max-width: 991px)
+        font-size: 12px
 
   &__button
     margin-bottom: 16px
+    @media (max-width: 768px)
+      min-height: 55px
 
   &__politic
     font-size: 10px
     color: rgba(196, 196, 196, 0.8)
     text-align: left
+    @media (max-width: 768px)
+      text-align: center

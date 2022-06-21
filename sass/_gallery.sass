@@ -2,5 +2,10 @@
   margin-top: -40px
   &__swiper
     margin-bottom: $mb
+    @media (max-width: 768px)
+      margin-bottom: $mb-m
   &__img
     max-height: 700px
+    @media (max-width: 768px)
+      object-fit: cover
+      min-height: 570px

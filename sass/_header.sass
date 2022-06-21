@@ -2,12 +2,21 @@
   &__container
     max-width: 1360px
     margin: 0 auto
+    @media (max-width: 1420px)
+      padding: 0 30px
+    @media (max-width: 991px)
+      padding: 0 20px
+    @media (max-width: 560px)
+      padding: 0 10px
+    &--mobile
+      @media (max-width: 1078px)
+        padding: 0
+
 
 
   &__wrapper
     background-color: #EFEFEF
     padding: 10px 0 10px 0
-    margin-bottom: 30px
 
   &__top
     display: flex
@@ -22,6 +31,10 @@
   &__contacts-info
     max-width: 20px
     max-height: 20px
+
+  &__deliver
+    @media (max-width: 768px)
+      display: none
 
   &__deliver-text
     display: flex
@@ -41,30 +54,90 @@
     align-items: center
     justify-content: space-between
     margin-bottom: 107px
+    padding: 30px 0 0 0
+    @media (max-width: 1078px)
+      padding: 14px 30px
+      background-color: #FEFDFC
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+    @media (max-width: 991px)
+      padding: 14px 20px
+    @media (max-width: 560px)
+      padding: 14px 10px
+  &__navigation
+    @media (max-width: 1078px)
+      display: none
+    &--mobile-open
+      position: fixed
+      display: block
+      background: #FEFDFC
+      width: 100%
+      height: 80vh
+      top: 0
+      z-index: 100000
 
   &__keeping
     display: flex
     align-items: center
     gap: 30px
+    @media (max-width: 1120px)
+      gap: 15px
+
 
   &__logo
     display: flex
     max-height: 22px
+    @media (max-width: 560px)
+      max-width: 220px
+
+  &__contacts-items
+    &--hide
+      @media (max-width: 768px)
+        display: none
 
   &__contacts-link
     color: #4E5052
+    @media (max-width: 768px)
+      font-size: 16px
     &--mail
       display: flex
       align-items: center
+      @media (max-width: 768px)
+        font-size: 12px
+        color: #8E9194
       &:before
         content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.65527 6.14069V17.8692L7.51955 12.005L1.65527 6.14069ZM2.82051 4.96552L10.2448 12.3898C11.1824 13.3274 12.8178 13.3274 13.7554 12.3898L21.1797 4.96552H2.82051Z' fill='%23C2B697'/%3E%3Cpath d='M14.9253 13.56C14.1448 14.3412 13.1054 14.7724 11.9997 14.7724C10.8941 14.7724 9.85463 14.3412 9.07422 13.56L8.68939 13.1752L2.83008 19.0345H21.1694L15.3101 13.1752L14.9253 13.56ZM16.4803 12.005L22.3446 17.8692V6.14069L16.4803 12.005Z' fill='%23C2B697'/%3E%3C/svg%3E%0A")
         margin-right: 9px
         margin-left: 21px
         transform: translateY(1px)
+        @media (max-width: 768px)
+          content: none
 
   &__keeping-link
     text-transform: uppercase
     letter-spacing: 0.06em
+
+  &__burger-wrapper
+    display: none
+    align-items: center
+    justify-content: center
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: #C1B49B
+    cursor: pointer
+    @media (max-width: 1078px)
+      display: flex
+      margin: 0 0 0 auto
+  &__burger
+    width: 20px
+    height: 14px
+
+  &__mobile
+    display: none
+    @media (max-width: 768px)
+      display: flex
+      flex-direction: column
+      align-items: flex-end
 
 
 

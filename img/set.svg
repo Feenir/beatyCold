@@ -77,5 +77,15 @@
         <rect x="2.27246" y="0.5" width="32.1411" height="3.21411" transform="rotate(45 2.27246 0.5)" fill="#56585B"/>
     </symbol>
 
+    <symbol id="burger" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H20V2H0V0Z" fill="#FEFDFC"/>
+        <path d="M0 6H20V8H0V6Z" fill="#FEFDFC"/>
+        <path d="M0 12H20V14H0V12Z" fill="#FEFDFC"/>
+    </symbol>
+
+    <symbol id="close-burger" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.388672" y="11.1094" width="15.4277" height="1.54277" transform="rotate(-45 0.388672 11.1094)" fill="#56585B"/>
+        <rect x="1.47949" y="0.200195" width="15.4277" height="1.54277" transform="rotate(45 1.47949 0.200195)" fill="#56585B"/>
+    </symbol>
 
 </svg>

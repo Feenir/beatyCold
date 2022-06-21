@@ -23,3 +23,16 @@ $('.js-close-popup').click(function(e) {
 	e.preventDefault();
 	$('.popup').removeClass('popup--open');
 });
+
+
+jQuery(document).ready(function($){
+	$('.js-burger').on('click',function(event) {
+		event.preventDefault();
+		$('.menu-mobile').addClass('menu-mobile--mobile-open')
+	});
+});
+
+$('.js-close-burger').click(function(e) {
+	e.preventDefault();
+	$('.menu-mobile').removeClass('menu-mobile--mobile-open');
+});
