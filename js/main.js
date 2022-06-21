@@ -1,9 +1,9 @@
-// var swiper = new Swiper(".js-gallery", {
-// 	loop: true,
-// 	autoplay: true,
-// 	speed: 800,
-// 	delay: 1000,
-// });
+var swiper = new Swiper(".js-gallery", {
+	// loop: true,
+	// autoplay: true,
+	// speed: 800,
+	// delay: 1000,
+});
 
 jQuery(document).ready(function($){
 	$('.js-popup').on('click',function(event) {

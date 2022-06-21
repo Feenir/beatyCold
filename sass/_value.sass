@@ -1,0 +1,53 @@
+.value
+  &__title-wrapper
+    margin-bottom: 67px
+    &--blog
+      margin-bottom: 0
+
+  &__text
+    margin-bottom: 57px
+
+  &__item-wrapper
+    display: flex
+    align-items: stretch
+    gap: 50px
+    margin-bottom: $mb
+
+  &__item
+    display: inline-flex
+    flex-direction: column
+    justify-content: space-between
+    width: calc(33.33% - 34px)
+    &--four
+      width: calc(25% - 16.667px)
+
+  &__item-bottom
+    display: flex
+    flex-direction: column
+    flex: 1
+  &__item-top
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    margin-bottom: 33px
+    min-height: 273px
+    &--figure
+      background-image: url("../img/value/value-test.jpg")
+      min-height: 173px
+      overflow: hidden
+      border-top-right-radius: 16px
+      border-bottom-left-radius: 16px
+    &--blog
+      background-image: url("../img/blog/blog-test.jpg")
+
+  &__item-title
+    margin-bottom: 18px
+
+  &__item-text
+    &--blog
+      margin-bottom: 30px
+
+  &__link
+    max-width: 180px
+    padding: 13px 0
+

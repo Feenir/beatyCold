@@ -13,6 +13,9 @@
   &__button-wrapper
     z-index: 100
 
+  &__text
+    font-size: 20px
+
   &__button
     display: flex
     align-items: center
@@ -23,6 +26,7 @@
     min-width: 185px
     min-height: 185px
     cursor: pointer
+
     &:hover .hero__button-text
       background-color: #C1B49B
 
@@ -40,8 +44,9 @@
 
   &__button-figure
     position: absolute
-    bottom: -64px
+    bottom: -23px
     left: -70px
+    z-index: -1
 
   &__button-path
     fill: white
