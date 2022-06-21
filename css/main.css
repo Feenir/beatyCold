@@ -234,6 +234,9 @@ img {
   height: 90%;
   width: 100%;
   z-index: 1000; }
+  @media (max-height: 620px) {
+    .menu-mobile {
+      height: 100%; } }
   .menu-mobile--mobile-open {
     display: block; }
   .menu-mobile__body {
