@@ -1,9 +1,15 @@
+/* ==============================================
+	** Слайдер
+	============================================== */
 var swiper = new Swiper(".js-gallery", {
-	// loop: true,
-	// autoplay: true,
-	// speed: 800,
-	// delay: 1000,
+	loop: true,
+	autoplay: true,
+	speed: 800,
+	delay: 1000,
 });
+/* ==============================================
+	** Всплыващка Hero
+	============================================== */
 
 jQuery(document).ready(function($){
 	$('.js-popup').on('click',function(event) {
@@ -24,6 +30,10 @@ $('.js-close-popup').click(function(e) {
 	$('.popup').removeClass('popup--open');
 });
 
+/* ==============================================
+	** Меню бургер закрыть
+	============================================== */
+
 
 jQuery(document).ready(function($){
 	$('.js-burger').on('click',function(event) {
@@ -36,3 +46,28 @@ $('.js-close-burger').click(function(e) {
 	e.preventDefault();
 	$('.menu-mobile').removeClass('menu-mobile--mobile-open');
 });
+
+
+/* ==============================================
+	** Липкий хэдер
+	============================================== */
+// $(document).ready(function () {
+// 	const headerHeight = $('.header').height()
+// 	$(window).scroll(function(){
+// 		if($(this).scrollTop()>headerHeight){
+// 			$('.header').addClass('header--scroll');
+// 			$('body').css({
+// 				'paddingTop': headerHeight// делаем отступ у body, равный высоте шапки
+// 			});
+//
+// 		}
+// 		else if ($(this).scrollTop()<headerHeight){
+// 			$('.header').removeClass('header--scroll');
+// 			$('body').css( {
+// 				paddingTop: 0
+// 			})
+// 		}
+//
+// 	});
+//
+// });

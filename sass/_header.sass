@@ -11,6 +11,22 @@
     &--mobile
       @media (max-width: 1078px)
         padding: 0
+  &--scroll
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 100000
+    & .header__wrapper
+      width: 100%
+    & .header__container
+      width: 100%
+    & .header__bottom
+      margin-bottom: 0
+
 
 
 

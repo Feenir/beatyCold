@@ -287,6 +287,21 @@ img {
   @media (max-width: 1078px) {
     .header__container--mobile {
       padding: 0; } }
+.header--scroll {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100000; }
+  .header--scroll .header__wrapper {
+    width: 100%; }
+  .header--scroll .header__container {
+    width: 100%; }
+  .header--scroll .header__bottom {
+    margin-bottom: 0; }
 .header__wrapper {
   background-color: #EFEFEF;
   padding: 10px 0 10px 0; }
@@ -436,22 +451,6 @@ img {
     .hero__text {
       margin-bottom: 20px; } }
 .hero__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #C5B9A5;
-  border-radius: 50%;
-  background-color: white;
-  min-width: 185px;
-  min-height: 185px;
-  cursor: pointer;
-  margin-right: 210px; }
-  @media (max-width: 1400px) {
-    .hero__button {
-      margin-right: 0; } }
-  .hero__button:hover .hero__button-text {
-    background-color: #C1B49B; }
-.hero__button-text {
   position: relative;
   display: flex;
   align-items: center;
@@ -461,17 +460,41 @@ img {
   background-color: #AA9C85;
   color: white;
   border-radius: 50%;
-  transition: background 0.5s; }
+  transition: background 0.5s;
+  cursor: pointer;
+  margin-right: 210px; }
+  .hero__button:before {
+    content: "";
+    position: absolute;
+    border: 2px solid #AA9C85;
+    min-width: 165px;
+    min-height: 165px;
+    border-radius: 50%;
+    animation: pulse 1500ms infinite ease-in-out;
+    z-index: -1; }
+  @media (max-width: 1400px) {
+    .hero__button {
+      margin-right: 0; } }
+  .hero__button:hover {
+    background-color: #C1B49B; }
 .hero__button-figure {
   position: absolute;
-  bottom: -23px;
-  left: -70px;
-  z-index: -1; }
+  bottom: -14px;
+  left: -75px;
+  z-index: -2; }
 .hero__button-path {
   fill: white; }
 .hero__button-figure {
   pointer-events: none; }
-
+@keyframes pulse {
+  0% {
+    min-height: 145px;
+    min-width: 145px;
+    opacity: 1; }
+  100% {
+    min-height: 190px;
+    min-width: 190px;
+    opacity: 0; } }
 .gallery {
   margin-top: -40px; }
   .gallery__swiper {
@@ -691,7 +714,6 @@ img {
     .value__item-top {
       margin-bottom: 26px; } }
   .value__item-top--figure {
-    background-image: url("../img/value/value-test.jpg");
     min-height: 173px;
     overflow: hidden;
     border-top-right-radius: 16px;
@@ -699,8 +721,20 @@ img {
     @media (max-width: 768px) {
       .value__item-top--figure {
         min-height: 243px; } }
-  .value__item-top--blog {
-    background-image: url("../img/blog/blog-test.jpg"); }
+  .value__item-top--design {
+    background-image: url("../img/value/1.jpg"); }
+  .value__item-top--innovate {
+    background-image: url("../img/value/2.jpg"); }
+  .value__item-top--comfort {
+    background-image: url("../img/value/3.jpg"); }
+  .value__item-top--quality {
+    background-image: url("../img/value/4.jpg"); }
+  .value__item-top--coats {
+    background-image: url("../img/blog/1.jpg"); }
+  .value__item-top--vine {
+    background-image: url("../img/blog/2.jpg"); }
+  .value__item-top--want {
+    background-image: url("../img/blog/3.jpg"); }
 .value__item-title {
   margin-bottom: 18px;
   text-transform: uppercase; }
