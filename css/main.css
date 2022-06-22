@@ -271,6 +271,9 @@ img {
     text-decoration: underline; }
     .menu-mobile__items-social:not(:last-child) {
       margin-bottom: 26px; }
+  .menu-mobile__close-svg {
+    width: 25px;
+    height: 25px; }
 
 .header__container {
   max-width: 1360px;
