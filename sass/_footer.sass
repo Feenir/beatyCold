@@ -12,27 +12,39 @@
     display: flex
     flex-direction: column
     justify-content: space-between
-    width: calc(33.33% - 20px)
-    @media (max-width: 891px)
+    width: calc(25% - 20px)
+    &:not(:last-child)
+      @media (max-width: 1024px)
+        margin-bottom: 40px
+
+    @media (max-width: 1024px)
+      width: 50%
+    @media (max-width: 768px)
       width: 100%
     &--first
       margin-right: 40px
-      @media (max-width: 891px)
+      @media (max-width: 1024px)
+        margin-right: 0
+      @media (max-width: 768px)
         margin-bottom: 22px
         order: 1
+
     &--second
-      width: calc(25% - 20px)
-      @media (max-width: 891px)
+      @media (max-width: 768px)
         width: 100%
         order: 3
         margin-bottom: 64px
 
     &--third
-      width: calc(24% - 20px)
-      @media (max-width: 891px)
+      @media (max-width: 768px)
+        width: 100%
+        order: 4
+        margin-bottom: 50px
+
+    &--four
+      @media (max-width: 768px)
         width: 100%
         order: 2
-        margin-bottom: 50px
 
   &__logo
     margin-bottom: 130px
@@ -62,12 +74,26 @@
 
   &__keeping-items
     text-transform: uppercase
+    overflow: hidden
+    &:hover .footer__keeping-link:before
+      content: ''
+      left:  0
     &:not(:last-child)
       margin-bottom: 20px
 
   &__keeping-link
     color: #E3E5E9
     letter-spacing: 0.06em
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      bottom: 0
+      width: 100%
+      height: 2px
+      background-color: #E3E5E9
+      left: -100%
+      transition: all .5s
     @media (max-width: 991px)
       font-size: 15px
 
@@ -110,7 +136,13 @@
 
   &__bottom-mob
     display: none
-    @media (max-width: 891px)
+    @media (max-width: 768px)
       display: block
-      order: 4
+      order: 5
+
+
+
+
+
+
 

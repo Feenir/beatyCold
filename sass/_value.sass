@@ -7,16 +7,21 @@
     &--blog
       margin-bottom: 0
 
-
   &__text
+    margin-top: 10px
     margin-bottom: 57px
+    font-size: 20px
     @media (max-width: 768px)
       text-align: center
+      font-size: 18px
+      margin-bottom: 30px
+    @media (max-width: 560px)
+      font-size: 16px
 
   &__item-wrapper
     display: flex
     align-items: stretch
-    gap: 50px
+    gap: 40px
     margin-bottom: $mb
     &--client
       &:after
@@ -35,7 +40,7 @@
     display: inline-flex
     flex-direction: column
     justify-content: space-between
-    width: calc(33.33% - 34px)
+    width: calc(33.33% - 26px)
     @media (max-width: 991px)
       width: 100%
     &--four
@@ -58,11 +63,11 @@
     background-repeat: no-repeat
     background-position: center
     margin-bottom: 33px
-    min-height: 273px
+    min-height: 270px
     @media (max-width: 768px)
       margin-bottom: 26px
     &--figure
-      min-height: 173px
+      min-height: 200px
       overflow: hidden
       border-top-right-radius: 16px
       border-bottom-left-radius: 16px
@@ -91,7 +96,6 @@
       font-size: 18px
       text-align: center
 
-
   &__item-text
     @media (max-width: 768px)
       font-size: 15px
@@ -107,4 +111,6 @@
       margin: 0 auto
       max-width: 250px
       width: 100%
+
+
 
