@@ -379,6 +379,8 @@ img {
 @media (max-width: 768px) {
   .header__contacts-items--hide {
     display: none; } }
+.header__contacts-info {
+  transform: translateY(2px); }
 .header__contacts-link {
   color: #4E5052; }
   @media (max-width: 768px) {
@@ -395,13 +397,28 @@ img {
       content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.65527 6.14069V17.8692L7.51955 12.005L1.65527 6.14069ZM2.82051 4.96552L10.2448 12.3898C11.1824 13.3274 12.8178 13.3274 13.7554 12.3898L21.1797 4.96552H2.82051Z' fill='%23C2B697'/%3E%3Cpath d='M14.9253 13.56C14.1448 14.3412 13.1054 14.7724 11.9997 14.7724C10.8941 14.7724 9.85463 14.3412 9.07422 13.56L8.68939 13.1752L2.83008 19.0345H21.1694L15.3101 13.1752L14.9253 13.56ZM16.4803 12.005L22.3446 17.8692V6.14069L16.4803 12.005Z' fill='%23C2B697'/%3E%3C/svg%3E%0A");
       margin-right: 9px;
       margin-left: 21px;
-      transform: translateY(1px); }
+      transform: translateY(2px); }
       @media (max-width: 768px) {
         .header__contacts-link--mail:before {
           content: none; } }
+.header__keeping-items {
+  overflow: hidden; }
+  .header__keeping-items:hover .header__keeping-link:before {
+    content: "";
+    left: 0; }
 .header__keeping-link {
   text-transform: uppercase;
-  letter-spacing: 0.06em; }
+  letter-spacing: 0.06em;
+  position: relative; }
+  .header__keeping-link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #747679;
+    left: -100%;
+    transition: all 0.5s; }
 .header__burger-wrapper {
   display: none;
   align-items: center;
