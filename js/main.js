@@ -51,23 +51,23 @@ $('.js-close-burger').click(function(e) {
 /* ==============================================
 	** Липкий хэдер
 	============================================== */
-// $(document).ready(function () {
-// 	const headerHeight = $('.header').height()
-// 	$(window).scroll(function(){
-// 		if($(this).scrollTop()>headerHeight){
-// 			$('.header').addClass('header--scroll');
-// 			$('body').css({
-// 				'paddingTop': headerHeight// делаем отступ у body, равный высоте шапки
-// 			});
-//
-// 		}
-// 		else if ($(this).scrollTop()<headerHeight){
-// 			$('.header').removeClass('header--scroll');
-// 			$('body').css( {
-// 				paddingTop: 0
-// 			})
-// 		}
-//
-// 	});
-//
-// });
+$(document).ready(function () {
+	const headerHeight = $('.header').outerHeight(true)
+	$(window).scroll(function(){
+		if($(this).scrollTop()>1){
+			$('.header').addClass('header--scroll');
+			$('body').css({
+				'paddingTop': headerHeight // делаем отступ у body, равный высоте шапки
+			});
+
+		}
+		else if ($(this).scrollTop()<headerHeight){
+			$('.header').removeClass('header--scroll');
+			$('body').css( {
+				paddingTop: 0
+			})
+		}
+
+	});
+
+});
