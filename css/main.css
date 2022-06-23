@@ -717,7 +717,8 @@ img {
       width: calc(50% - 5px); } }
 .photo__img {
   height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  max-height: 370px; }
 
 .value__title-wrapper {
   margin-bottom: 67px; }
