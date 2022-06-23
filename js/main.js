@@ -54,7 +54,7 @@ $('.js-close-burger').click(function(e) {
 $(document).ready(function () {
 	const headerHeight = $('.header').outerHeight(true)
 	$(window).scroll(function(){
-		if($(this).scrollTop()>1){
+		if($(this).scrollTop()>0){
 			$('.header').addClass('header--scroll');
 			$('body').css({
 				'paddingTop': headerHeight // делаем отступ у body, равный высоте шапки
