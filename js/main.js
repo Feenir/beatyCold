@@ -71,3 +71,10 @@ $(document).ready(function () {
 	});
 
 });
+
+$('.js-notify-close').click(function(e) {
+	e.preventDefault();
+	$('.notify').removeClass('notify--open');
+});
+
+$(".phone-mask").mask("+7(999) 999-9999")

@@ -1,0 +1,38 @@
+.thanks
+  background-image: url("../img/phanks/phanks.jpg")
+  width: 100%
+  height: 100vh
+  @media (max-width: 768px)
+    background-image: none
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+  &__body
+    display: flex
+    box-sizing: border-box
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: white
+    max-width: 960px
+    min-height: 570px
+    padding: 0 165px
+    @media (max-width: 768px)
+      padding: 0 15px
+
+  &__title
+    text-align: center
+    margin-bottom: 21px
+  &__text
+    margin-bottom: 32px
+    text-align: center
+
+  &__button
+    margin-right: 0
+    &:before
+      content: ''
+      z-index: 1
+
+

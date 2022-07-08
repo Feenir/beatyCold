@@ -117,10 +117,10 @@
 		<div class="hero__wrapper">
 			<p class="hero__text">Мы создаем технологически совершенные решения для хранения вин, меха и сигар, которые
 				можно вписать в любой интерьер</p>
-			<div class="hero__button-wrapper">
-				<button class="hero__button js-popup" type="button">Оставить заявку
-					<span class="hero__button-figure">
-						<svg class="hero__button-svg" width="310" height="50" viewBox="0 0 310 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<div class="hero__button-wrapper main-button">
+				<button class="main-button__button js-popup" type="button">Оставить заявку
+					<span class="main-button__figure">
+						<svg class="main-button__svg" width="310" height="50" viewBox="0 0 310 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0.000976562 0C64.0015 0 83.0011 50 156.001 50C229.001 50 255.501 0 309.501 0H0.000976562Z" fill="#FEFDFC"/>
 						</svg>
 				</span>
@@ -216,7 +216,7 @@
 						<li class="device__list-items">Со стеклянными дверцами,</li>
 						<li class="device__list-items">Малошумные.</li>
 					</ul>
-					<button class="device__button button" type="button">Узнать больше</button>
+					<a href="#" class="device__button button" type="button">Узнать больше</a>
 				</div>
 			</div>
 			
@@ -227,7 +227,7 @@
 					<h3 class="device__items-title">ВИННЫЕ ПОГРЕБА <br>И КОМНАТЫ</h3>
 					<p class="device__text">Мы разрабатываем винные погреба под ключ: от идеи до наполнения: разрабатываем проект, создаем мебель, подбираем освещение и даже наполняем готовый погреб с помощью частного сомелье.</p>
 					<p class="device__list-title device__list-title--not-list">Мы исполним любое пожелание: от приватного винного кабинета до погреба с зоной дегустации.  </p>
-					<button class="device__button button" type="button">Узнать больше</button>
+					<a href="#" class="device__button button" type="button">Узнать больше</a>
 				</div>
 			</div>
 			
@@ -240,7 +240,7 @@
 					<p class="device__text">Мы беремся за проект на стадии разработки проекта инженерных систем и дизайна интерьера и сдаем полностью готовое помещение.</p>
 					<p class="device__list-title device__list-title--not-list">При желании, мы можем собрать вашу первую табачную коллекцию и наладить сервис пополнения запасов. </p>
 			
-					<button class="device__button button" type="button">Узнать больше</button>
+					<a href="#" class="device__button button" type="button">Узнать больше</a>
 				</div>
 			</div>
 			
@@ -251,7 +251,7 @@
 					<h3 class="device__items-title">ПРОДУКТОВАЯ КОМНАТА</h3>
 					<p class="device__text">Производим продуктовые комнаты для частных домов и ресторанов для бережного хранения продуктов.</p>
 					<p class="device__list-title device__list-title--not-list">Наши продуктовые комнаты имеют несколько климатических зон и отлично подходят для хранения большого объема продуктов. </p>
-					<button class="device__button button" type="button">Узнать больше</button>
+					<a href="#" class="device__button button" type="button">Узнать больше</a>
 				</div>
 			</div>
 
@@ -260,6 +260,16 @@
 </section>
 
 <section class="quest">
+	
+	<div class="quest__notify notify notify--open">
+	<div class="notify__body notify__body--error">
+		<p class="notify__text">Пожалуйста, заполните все обязательные поля</p>
+		<div class="notify__close js-notify-close">x</div>
+	</div>
+	</div>
+	
+	
+	
 	<div class="quest__box container">
 		<div class="quest__border">
 			<div class="quest__wrapper">
@@ -283,8 +293,8 @@
 					
 					<div class="quest__item quest__item--form">
 						<form class="quest__form" action="#">
-							<label class="quest__label"> <input class="quest__input" type="text" placeholder="Ваше имя"></label>
-							<label class="quest__label"> <input class="quest__input" type="tel" placeholder="+7 (999) 999 99 99"></label>
+							<label class="quest__label"> <input class="quest__input quest__input--error" type="text" placeholder="Ваше имя"></label>
+							<label class="quest__label"> <input class="quest__input phone-mask" type="tel" placeholder="+7 (999) 999 99 99"></label>
 							<label class="quest__label"> <input class="quest__input" type="text" placeholder="Какое оборудование Вас интересует?"></label>
 							<button class="quest__button button" type="submit">Отправить</button>
 							<a class="quest__politic" href="#">Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности и обработкой персональных данных</a>
@@ -472,7 +482,7 @@
 				<input class="form__input" type="text" placeholder="Ваше имя">
 			</label>
 			<label class="form__label">
-				<input class="form__input" type="tel" placeholder="+7 (999) 999 99 99">
+				<input class="form__input phone-mask" type="tel" placeholder="+7 (999) 999 99 99">
 			</label>
 			<label class="form__label">
 				<input class="form__input" type="text" placeholder="Какое оборудование Вас интересует?">
@@ -495,6 +505,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/maskInput.js"></script>
 <script src="js/fancybox.js"></script>
 <script src="js/main.js"></script>
 </body>
